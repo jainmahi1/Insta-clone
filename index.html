@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- insta font icon -->
+   <link rel="shortcut icon" href="https://upload.wikimedia.org/wikipedia/commons/9/95/Instagram_logo_2022.svg" type="image/x-icon">
+
+  <!--insta font icon  -->
+  <title>Instagram</title>
+
+  <!-- font awsome cdn -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <!-- font awsome cdn -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- main container -->
+  <div class="container">
+     <!-- main container -->
+    <!-- left side navbar  -->
+
+      <nav class="navbar" >
+
+        <img class="logo" src="images/instagram-text-icon.webp" alt="logo">
+
+          <div class="home">
+            <i class="fa-solid fa-house"></i>
+            <div class="icon-name">Home</div>
+          </div>
+          <div class="home">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="icon-name">Search</div>
+          </div>
+
+          <div class="home">
+            <i class="fa-regular fa-compass"></i>
+            <div class="icon-name"> Explore</div>
+         </div>
+
+          <div class="home">
+            <img class="reel-icon" src="data:image/png;base64,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" alt="reel icon">
+            <div class="icon-name">Reels </div>
+          </div>
+      
+        <div class="home">
+            <i class="fa-regular fa-comment"></i>
+            <div class="icon-name">Messages</div>
+        </div>
+
+        <div class="home">
+            <i class="fa-regular fa-heart"></i>
+            <div class="icon-name">Notifications</div>
+        </div>
+
+        <div class="home">
+            <i class="fa-regular fa-square-plus"></i>
+            <div class="icon-name">Create</div>
+        </div>
+
+        <div class="home">
+            <img class="user-profile" src="https://images.unsplash.com/photo-1558482240-4e3c42448028?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGZlbWFsZSUyMGZhY2V8ZW58MHwwfDB8fHwy" alt="user">
+            <div class="icon-name">Profile</div>
+        </div>
+
+        <div class="more">
+          <i class="fa-solid fa-bars"></i>
+          <div class="icon-name">More</div>
+        </div>
+     
+
+      </nav>
+      <!-- end of nav1 -->
+      <!-- navbar2  -->
+    <div class="story-container">
+      <div class="stories">
+      <div class="story">
+        <img class="story-img" src="https://media.istockphoto.com/id/944032130/photo/beautiful-woman-with-cinema-clapper-on-red-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=JgHXGruOvNzozUcdvce-oCJCgILdPP5F751Du6An68Q=" alt="user">
+        <div class="name">kushakapila</div>
+    </div>
+    <div class="story">
+      <img class="story-img" src="https://images.unsplash.com/photo-1624224971170-2f84fed5eb5e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YWN0b3IlMjBmYWNlfGVufDB8MHwwfHx8Mg%3D%3D" alt="user">
+      <div class="name">whogagan...</div>
+    </div>
+    <div class="story">
+      <img class="story-img" src="https://images.unsplash.com/photo-1716355403737-aa10ebf96f3c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzV8fGFjdG9yJTIwZmFjZXxlbnwwfDB8MHx8fDI%3D" alt="user">
+      <div class="name">zakirkhan_...</div>
+    </div>
+    <div class="story">
+      <img class="story-img" src="https://images.unsplash.com/photo-1628341948331-60d67ac2e9be?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGFjdG9yJTIwZmFjZXxlbnwwfDB8MHx8fDI%3D" alt="user">
+      <div class="name">jassmanak</div>
+  </div>
+  <div class="story">
+    <img class="story-img" src="https://images.unsplash.com/photo-1606946110090-e130761bfcea?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTl8fGFjdG9yJTIwZmFjZXxlbnwwfDB8MHx8fDI%3D" alt="user">
+    <div class="name">rohitsaraf</div>
+  </div>
+  <div class="story">
+    <img class="story-img" src="https://media.istockphoto.com/id/1344526916/photo/young-sikh-businessman-working-on-computer-at-office.webp?a=1&b=1&s=612x612&w=0&k=20&c=NgFzwiaabSiFrNK3-3YOJd577t4PcHG3SBPXnmNCPdI=" alt="user">
+    <div class="name">realharshg....</div>
+ </div>
+  <div class="story">
+   <img class="story-img" src="https://media.istockphoto.com/id/538031140/photo/choice-concept-facts-and-myths.webp?b=1&s=612x612&w=0&k=20&c=7aS9H7afBmUQlnTua9smZiQbAhUjH50TgTk6h4rWA-o=" alt="user">
+   <div class="name">girlzfactsof...</div>
+  </div>
+  <div class="story">
+    <img class="story-img" src="https://images.unsplash.com/photo-1526080652727-5b77f74eacd2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGZlbWFsZSUyMGZhY2V8ZW58MHwwfDB8fHwy" alt="user">
+    <div class="name">michael.mi...</div>
+   </div>
+<div class="story">
+    <img class="story-img" src="https://images.unsplash.com/photo-1669829498118-00e78d6181d1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8ZmVtYWxlJTIwZmFjZXxlbnwwfDB8MHx8fDI%3D" alt="user">
+    <div class="name">k.sharma0...</div>
+   </div>
+    </div>
+    <!-- feeds in making -->
+    <div class="feed">
+    <div class="profile">
+      <img class="user" src="https://images.unsplash.com/profile-1627669144720-840e2e3e3ec4image?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="user">
+      <div class="feed-flex">
+          <div class="feed-name">adityachin<span style="color: rgb(149, 148, 148);"> .1d</span></div>
+          <div> <i class="fa-solid fa-ellipsis"></i></div>   
+      </div>
+   </div>
+   <img class="feed-img" src="https://images.unsplash.com/photo-1514525253161-7a46d19cd819?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y29uY2VydHxlbnwwfDB8MHx8fDI%3D" alt="concert">
+   
+   <div class="reaction">
+    <div class="reaction-left">
+      <i class="fa-regular fa-heart"></i> 9,876
+      <i class="fa-regular fa-comment"></i> 728
+      <i class="fa-regular fa-paper-plane"></i>
+    </div>
+    <div>
+      <i class="fa-regular fa-bookmark"></i>
+    </div>
+     </div>
+   <p><span style="font-weight: 600;">adityachin</span> Vancouver, BC, Canada Concert</p>
+   </div>
+   <!-- box2 -->
+   <div class="feed">
+    <div class="profile">
+      <img class="user" src="https://images.unsplash.com/profile-1676576394134-66e5c24cfd4cimage?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="user">
+        <div class="">
+            <div class="feed-name">mehan.ruth <span style="color: rgb(149, 148, 148);">  .2h</span></div> 
+          </div>
+   </div>
+   <img class="feed-img" src="https://images.unsplash.com/photo-1576566982688-c88e03b99a0d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="concert">
+   
+   <div class="reaction">
+    <div class="reaction-left">
+      <i class="fa-regular fa-heart"></i> 1,845
+      <i class="fa-regular fa-comment"></i> 72
+      <i class="fa-regular fa-paper-plane"></i>
+    </div>
+    <div>
+      <i class="fa-regular fa-bookmark"></i>
+    </div>
+     </div>
+     <p> <span style="font-weight: 600;"> Mehan.Ruth</span> "Des Monies, Iowa.
+      Lost in the beauty of snowy peaks. #travel #mountainscalling #snow #traveldiaries... </p>
+
+   </div>
+   <!-- box3 -->
+   <div class="feed">
+    <div class="profile">
+        <img class="user" src="https://images.unsplash.com/profile-1715617333158-6162e0f8032c?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="user">
+        <div class="">
+            <div class="feed-name">Instantnews.in <span style="color: rgb(149, 148, 148);">  .1h</span></div>
+           
+            <div class="username">@newsinsta</div>
+        </div>
+     </div>
+       <img class="feed-img" src="https://images.unsplash.com/photo-1605186909539-7a0ba14a6637?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="News">
+       <div class="reaction">
+        <div class="reaction-left">
+          <i class="fa-regular fa-heart"></i> 987
+          <i class="fa-regular fa-comment"></i> 37
+          <i class="fa-regular fa-paper-plane"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-bookmark"></i>
+        </div>
+    </div>
+       <p> <span style="font-weight:600;">Instanew.in</span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum sint dolorem molestias? Consectetur, fugit ducimus!..</p>
+</div>
+<!-- box4 -->
+<div class="feed">
+  <div class="profile">
+      <img class="user" src="https://media.istockphoto.com/id/538031140/photo/choice-concept-facts-and-myths.webp?b=1&s=612x612&w=0&k=20&c=7aS9H7afBmUQlnTua9smZiQbAhUjH50TgTk6h4rWA-o=" alt="user">
+      <div class="feed-flex">
+          <div class="feed-name">trolls_official <span style="color: rgb(149, 148, 148);">  .5h</span></div>
+          <div> <i class="fa-solid fa-ellipsis"></i></div>
+      </div>
+   </div>
+     <img class="feed-img" src="https://images.unsplash.com/photo-1519304520401-239e2a56a1aa?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGZhY3RzJTIwZnVubnklMjBxdW90ZXxlbnwwfDB8MHx8fDI%3D" alt="News">
+     <div class="reaction">
+      <div class="reaction-left">
+        <i class="fa-regular fa-heart"></i> 67,383
+        <i class="fa-regular fa-comment"></i> 231
+        <i class="fa-regular fa-paper-plane"></i>
+      </div>
+      <div>
+        <i class="fa-regular fa-bookmark"></i>
+      </div>
+  </div>
+     <p> <span style="font-weight:600;">trolls_official</span> Kuch nahi badla aaj bhi sab vaisa hi hai!</p>
+</div>
+<!-- box5 -->
+<div class="feed">
+  <div class="profile">
+      <img class="user" src="https://images.unsplash.com/profile-1605780274397-200ea3604d6fimage?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="user">
+      <div class="feed-flex">
+          <div class="feed-name">tweets_zain <span style="color: rgb(149, 148, 148);">.9h</span></div>
+          <div> <i class="fa-solid fa-ellipsis"></i></div>
+        </div>
+   </div>
+     <img class="feed-img" src="https://images.unsplash.com/photo-1496395650962-374cae58ca8b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTF8fGNvbG9yZnVsJTIwcXVvdGV8ZW58MHwwfDB8fHwy" alt="News">
+     <div class="reaction">
+      <div class="reaction-left">
+        <i class="fa-regular fa-heart"></i> 45,151
+        <i class="fa-regular fa-comment"></i> 393
+        <i class="fa-regular fa-paper-plane"></i>
+      </div>
+      <div>
+        <i class="fa-regular fa-bookmark"></i>
+      </div>
+  </div>
+     <p> <span style="font-weight:600;">tweet.by.zain</span> Agree? 💭👇</p>
+</div>
+<!-- box6 -->
+<div class="feed">
+  <div class="profile">
+      <img class="user" src="https://images.unsplash.com/profile-1673011171297-4fd404de044fimage?w=150&dpr=2&crop=faces&bg=%23fff&h=150&auto=format&fit=crop&q=60&ixlib=rb-4.0.3" alt="user">
+      <div class="feed-flex">
+          <div class="feed-name">Nik<span style="color: rgb(149, 148, 148);">  .2d</span></div>
+          <div> <i class="fa-solid fa-ellipsis"></i></div>
+      </div>
+   </div>
+     <img class="feed-img" src="https://images.unsplash.com/photo-1535365860506-d8b700079e59?q=80&w=1898&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="News">
+     <div class="reaction">
+      <div class="reaction-left">
+          <i class="fa-regular fa-heart"></i> 8,837
+          <i class="fa-regular fa-comment"></i> 27
+          <i class="fa-regular fa-paper-plane"></i>
+        </div>
+        <div>
+          <i class="fa-regular fa-bookmark"></i>
+        </div>
+  </div>
+     <p> <span style="font-weight:600;">@helloimnik</span> You’re not finding this by mistake!</p>
+</div>
+
+
+
+
+
+  </div>
+
+  
+
+    <div class="side-bar">
+        <div class="side-section">
+          <div class="image">
+          <img class="side-img" src="https://images.unsplash.com/photo-1558482240-4e3c42448028?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fGZlbWFsZSUyMGZhY2V8ZW58MHwwfDB8fHwy" alt="">
+
+          <div class="my-bio">
+            <div class="my-name">mahi_jain7</div>
+            <div class="my-user">Mahima Jain</div>
+          </div>
+        </div>
+        <div>
+          <button class="switch-btn">Switch</button> 
+        </div>
+        </div>
+
+        <div class="suggestion">
+          <div class="suggestions">Suggested for you</div>
+          <a href="#">See All</a>
+        </div>
+
+        <div class="side-sugg">
+          <div class="image">
+          <img class="sugg-img" src="https://images.unsplash.com/photo-1509967419530-da38b4704bc6?w=1000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGZlbWFsZSUyMGZhY2V8ZW58MHwwfDB8fHwy" alt="">
+
+          <div class="my-bio">
+            <div class="sugg-name">beautysecretsbyshi</div>
+            <div class="sugg-user">Followed by ayushi.jain32</div>
+          </div>
+        </div>
+      
+        <div>
+          <button class="switch-btn"> Follow</button> 
+        </div>
+
+        </div>
+
+
+        <div class="side-sugg">
+          <div class="image">
+          <img class="sugg-img" src="https://images.unsplash.com/photo-1529092419721-e78fb7bddfb2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGdpcmwlMjBwcm9maWxlfGVufDB8MHwwfHx8Mg%3D%3D" alt="">
+
+          <div class="my-bio">
+            <div class="sugg-name">@Leonidas_ph</div>
+            <div class="sugg-user">Followed by butwhyvishal +2...</div>
+          </div>
+        </div>
+      
+        <div>
+          <button class="switch-btn"> Follow</button> 
+        </div>
+        
+        </div>
+
+        <div class="side-sugg">
+          <div class="image">
+          <img class="sugg-img" src="https://images.unsplash.com/photo-1541752171745-4176eee47556?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bWFsZXxlbnwwfDB8MHx8fDI%3D" alt="">
+
+          <div class="my-bio">
+            <div class="sugg-name">keeyan_mir</div>
+            <div class="sugg-user">Followed by laksh chawla</div>
+          </div>
+        </div>
+      
+        <div>
+          <button class="switch-btn"> Follow</button> 
+        </div>
+        
+        </div>
+
+        <div class="side-sugg">
+          <div class="image">
+          <img class="sugg-img" src="https://images.unsplash.com/photo-1639684445526-2a2e94e62183?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+
+          <div class="my-bio">
+            <div class="sugg-name">@abrosimova_marina_foto</div>
+            <div class="sugg-user">Followed by elutkarsh +3...</div>
+          </div>
+        </div>
+      
+        <div>
+          <button class="switch-btn"> Follow</button> 
+        </div>
+        
+        </div>
+
+        <div class="side-sugg">
+          <div class="image">
+          <img class="sugg-img" src="https://images.unsplash.com/photo-1518941683719-5cd280fcdeb7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGluZGlhbiUyMG1hbGV8ZW58MHwwfDB8fHwy" alt="">
+
+          <div class="my-bio">
+            <div class="sugg-name">yeasinchodwary85</div>
+            <div class="sugg-user">Followed by abhinav_shar...</div>
+          </div>
+        </div>
+      
+        <div>
+          <button class="switch-btn"> Follow</button> 
+        </div>
+        
+        </div>
+
+        <footer>
+          <div >
+          <ul class="footer">
+            <li> About</li>
+            <li>Help</li>
+            <li>Press</li>
+            <li>API</li>
+            <li>Jobs</li>
+            <li>Privacy</li>
+            <li>Terms</li>
+            <li>Location</li>
+            <li>Language</li>
+            <li>Meta Verified</li>
+          </ul>
+        </div>
+           <p class="footer-copy">&#169  2024 INSTAGRAM FROM META</p>
+        </footer>
+
+
+      
+    </div>
+
+
+
+
+   <!-- end of main container -->
+  </div>
+  <!-- end of main container -->
+  
+</body>
+</html>
